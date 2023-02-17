@@ -19,9 +19,13 @@ if num:
     all += nums
 if symbol:
     all += symbols
+print('Enter length: ')
 
-length = 10
-amount = 10
+length = int(input())
+
+print('Enter amount: ')
+
+amount = int(input())
 
 for x in range(amount):
     password = ''.join(random.sample(all, length))
